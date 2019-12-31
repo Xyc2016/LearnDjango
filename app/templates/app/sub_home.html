@@ -1,0 +1,14 @@
+{% extends 'app/home.html' %}
+
+{% block content %}
+    This is content
+{% endblock %}
+
+{% block header %}
+    {{ block.super }}
+    Header in sub_home
+{% endblock %}
+
+{% block footer %}
+    {% include 'app/footer.html' %}
+{% endblock %}
